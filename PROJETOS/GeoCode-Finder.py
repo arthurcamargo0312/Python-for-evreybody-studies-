@@ -13,7 +13,7 @@ serviceurl = "http://py4e-data.dr-chuck.net/opengeo?"
 
 local = input("Digite o local: ")
 
-# criando o dicionário corretamente
+
 dic_localizacao = {}
 dic_localizacao["q"] = local
 
@@ -23,7 +23,6 @@ uh = urllib.request.urlopen(url)
 data = uh.read().decode()
 js = json.loads(data)
 
-# pegando o plus_code
 plus_code = js["features"][0]["properties"]["plus_code"]
 
 print("Plus code:", plus_code)
