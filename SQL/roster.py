@@ -86,7 +86,7 @@ cur.execute(sql_verificacao)
 resultado = cur.fetchone()
 
 if resultado:
-    print("COPIE O CÓDIGO ABAIXO E COLE NO SITE:")
+    print("codigo resultado: ")
     print(resultado[0])
 print("="*40)
 
